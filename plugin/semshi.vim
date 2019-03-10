@@ -1,17 +1,17 @@
-hi def semshiLocal           ctermfg=209 guifg=#ff875f
-hi def semshiGlobal          ctermfg=214 guifg=#ffaf00
-hi def semshiImported        ctermfg=214 guifg=#ffaf00 cterm=bold gui=bold
-hi def semshiParameter       ctermfg=75  guifg=#5fafff
-hi def semshiParameterUnused ctermfg=117 guifg=#87d7ff cterm=underline gui=underline
-hi def semshiFree            ctermfg=218 guifg=#ffafd7
-hi def semshiBuiltin         ctermfg=207 guifg=#ff5fff
-hi def semshiAttribute       ctermfg=49  guifg=#00ffaf
-hi def semshiSelf            ctermfg=249 guifg=#b2b2b2
-hi def semshiUnresolved      ctermfg=226 guifg=#ffff00 cterm=underline gui=underline
-hi def semshiSelected        ctermfg=231 guifg=#ffffff ctermbg=161 guibg=#d7005f
+highlight def semshiLocal           ctermfg=Blue        guifg=Blue
+highlight def semshiGlobal          ctermfg=Blue        guifg=Blue      cterm=underline     gui=underline
+highlight def semshiImported        ctermfg=Blue        guifg=Blue      cterm=bold          gui=bold
+highlight def semshiParameter       ctermfg=Yellow      guifg=Yellow
+highlight def semshiParameterUnused ctermfg=Yellow      guifg=Yellow    cterm=underline     gui=underline
+highlight def semshiFree            ctermfg=Red         guifg=Red       cterm=bold          gui=bold
+highlight def semshiBuiltin         ctermfg=Red         guifg=Red
+highlight def semshiAttribute       ctermfg=Green       guifg=Green
+highlight def semshiSelf            ctermfg=DarkGray    guifg=DarkGray
+highlight def semshiUnresolved      ctermfg=Red         guifg=Red       cterm=underline     gui=underline
+highlight def semshiSelected        ctermfg=Black       guifg=Black     ctermbg=Yellow      guibg=Yellow
 
-hi def semshiErrorSign       ctermfg=231 guifg=#ffffff ctermbg=160 guibg=#d70000
-hi def semshiErrorChar       ctermfg=231 guifg=#ffffff ctermbg=160 guibg=#d70000
+highlight def semshiErrorSign       ctermfg=White       guifg=White     ctermbg=Magenta     guibg=Magenta
+highlight def semshiErrorChar       ctermfg=White       guifg=White     ctermbg=Magenta     guibg=Magenta
 sign define semshiError text=E> texthl=semshiErrorSign
 
 
