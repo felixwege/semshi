@@ -1,10 +1,10 @@
-# Semshi
+# Semechki (Semshi without obliterating your colorscheme)
 
 [![Build Status](https://travis-ci.org/numirias/semshi.svg?branch=master)](https://travis-ci.org/numirias/semshi)
 [![codecov](https://codecov.io/gh/numirias/semshi/branch/master/graph/badge.svg)](https://codecov.io/gh/numirias/semshi)
 ![Python Versions](https://img.shields.io/badge/python-3.5,%203.6,%203.7,%203.8-blue.svg)
 
-Semshi provides semantic highlighting for Python in Neovim.
+Semechki provides semantic highlighting for Python in Neovim. It is a fork of numirias magnificent [Semshi](https://github.com/numirias/semshi) but it uses colors available in Vim.
 
 Unlike regex-based syntax highlighters, Semshi understands Python code and performs static analysis as you type. It builds a syntax tree and symbol tables to highlight names based on their scope and context. This makes code easier to read and lets you quickly identify missing imports, unused arguments, misspelled names, and more.
 
@@ -28,15 +28,17 @@ In the above example, you can easily distinguish arguments (blue), instance attr
 
 - Jumping between classes, functions and related names.
 
+- This fork uses Vim's build-in [color names](http://vimdoc.sourceforge.net/htmldoc/syntax.html#highlight-cterm) instead of hard-coding color codes.
+
 ## Installation
 
 - You need Neovim with Python 3 support (`:echo has("python3")`). To install the Python provider run:
 
       pip3 install pynvim --upgrade 
     
-- Add `numirias/semshi` via your plugin manager. If you're using [vim-plug](https://github.com/junegunn/vim-plug), add... 
+- Add `felixwege/semshi` via your plugin manager. If you're using [vim-plug](https://github.com/junegunn/vim-plug), add... 
 
-      Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
+      Plug 'felixwege/semshi', {'do': ':UpdateRemotePlugins'}
       
   ...and run `:PlugInstall`.
 
